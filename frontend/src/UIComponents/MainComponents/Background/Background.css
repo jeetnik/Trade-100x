@@ -1,0 +1,195 @@
+.background {
+  width: 100%;
+  height: 100%;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  margin: 0%;
+  padding: 0%;
+
+  /* position: inherit; */
+}
+
+.background-heading {
+  height: 9%; /* Takes 8% height */
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  overflow: hidden; /* when child size becomes larger than parent, this hides the part of child that overflows */
+  text-overflow: ellipsis; /* to put ...... for the part that is not visible on the screen*/
+  white-space: nowrap; /* to avoid going text to next line */
+  color: #ffffff;
+  font-weight: 600;
+  border-bottom: 1.5px solid #2a2a2a;
+  margin: 0%;
+  padding: 0%;
+}
+
+.background-top-info-section {
+  height: 8%; /* Takes 8% height */
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  overflow: hidden; /* when child size becomes larger than parent, this hides the part of child that overflows */
+  text-overflow: ellipsis; /* to put ...... for the part that is not visible on the screen*/
+  white-space: nowrap; /* to avoid going text to next line */
+  color: #ffffff;
+  font-weight: 600;
+  border-bottom: 1.5px solid #2a2a2a;
+  margin: 0%;
+  padding: 0%;
+}
+
+.background-middle-section {
+  height: 78%; /* Takes 78% height */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0%;
+  padding: 0%;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  .background {
+    position: relative;
+    height: auto;
+    min-height: 100%;
+    overflow-y: auto;
+    overflow-x: auto;
+    justify-content: flex-start;
+    min-width: 100%;
+  }
+
+  .background-heading {
+    height: fit-content;
+    overflow: scroll;
+    font-size: 12px;
+    min-height: 20px;
+  }
+
+  .background-top-info-section {
+    height: fit-content;
+    width: 100%;
+  }
+
+  .background-middle-section {
+    flex-direction: column; /* Changes to column on mobile */
+    height: fit-content;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  .background-bottom-section {
+    height: 15px;
+  }
+  .background-bottom-section-left-section {
+    font-size: 9px;
+  }
+  .background-bottom-section-right-section {
+    font-size: 9px;
+  }
+}
+
+.background-bottom-section {
+  height: 5%; /* Takes 5% height */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0%;
+  padding: 0%;
+  border-top: 1.5px solid#2A2A2A;
+}
+
+.background-bottom-buttons {
+  height: 100% !important;
+  border-radius: 0% !important;
+  outline: none !important;
+  background-color: transparent !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  color: #c0c0c0 !important;
+  margin: 0% !important;
+  transform: none !important;
+}
+
+.background-bottom-buttons-selected {
+  border-top: 2px solid #00c087 !important;
+  background-color: rgba(0, 192, 135, 0.4) !important;
+  transform: none !important;
+  color: #ffffff !important;
+}
+
+.background-bottom-section-left-section {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0%;
+  padding: 0%;
+  font-size: 12px;
+  font-weight: 300;
+}
+.background-bottom-section-anchor {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  gap: 4px;
+  color: #c0c0c0;
+  padding-left: 16px;
+}
+
+.background-bottom-section-right-section {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: right;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0%;
+  padding: 0%;
+  padding-right: 2%;
+  font-size: 12px;
+  font-weight: 300;
+  color: #c0c0c0;
+}
