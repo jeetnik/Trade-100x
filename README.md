@@ -77,7 +77,13 @@ This project uses a three-tier architecture:
 
 
 
+
+
+
+
+
 <img width="1427" height="745" alt="Screenshot 2025-08-31 at 21 25 32" src="https://github.com/user-attachments/assets/c0580b66-c304-4963-b953-8569e2310153" />
+
 
 
 
