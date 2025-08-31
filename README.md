@@ -73,5 +73,9 @@ This project uses a three-tier architecture:
 
 - Comprehensive test suite for all external smart contract functions
 - Frontend validation to prevent common transaction errors
+<img width="1440" height="734" alt="Screenshot 2025-08-31 at 21 23 19" src="https://github.com/user-attachments/assets/47d3326b-4c85-456a-b411-b39a1d6d330d" />
+
+
+
 
 
